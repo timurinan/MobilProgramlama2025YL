@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mailinizi Giriniz"
+        android:drawableStart="@drawable/mail_secici"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="300dp"
+        android:layout_marginTop="80dp"
+        android:hint="Telefonunuzu Giriniz"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/telefon_koyu"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Kaydol" />
+</LinearLayout>
