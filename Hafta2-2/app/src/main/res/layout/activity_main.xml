@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/txt_kartno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_adsoyad"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Kart Numarası Giriniz"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txt_adsoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Adınızı Soyadınızı Giriniz"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txt_skt"
+            android:layout_width="150dp"
+            android:hint="SKT"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_kartno"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txt_cvv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_kartno"
+            android:hint="CVV"
+            android:gravity="center"
+            android:layout_toRightOf="@id/txt_skt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/txt_skt"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Ödeme Yap" />
+    </RelativeLayout>
+</RelativeLayout>
