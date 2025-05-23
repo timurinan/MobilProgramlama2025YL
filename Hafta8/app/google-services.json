@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "225135659624",
-    "project_id": "my-firebase-application-e8ddb",
-    "storage_bucket": "my-firebase-application-e8ddb.firebasestorage.app"
+    "project_number": "486359137056",
+    "project_id": "loginsigninapp-9a2b7",
+    "storage_bucket": "loginsigninapp-9a2b7.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:225135659624:android:408d94c62e23dd8ad6c9dd",
+        "mobilesdk_app_id": "1:486359137056:android:284779b705f8d0f5933545",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.example.loginsgninapp"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBT5OBehkMpd0cvFodVD2Pj6AWhku7k_6A"
+          "current_key": "AIzaSyBIhx983Nr1XcsdAPIJ5EtYc3F9jGoieQM"
         }
       ],
       "services": {

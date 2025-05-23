@@ -4,71 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LogInActivity">
 
     <EditText
         android:id="@+id/txt_mail_login"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="194dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="98dp"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="88dp"
+        android:drawableStart="@drawable/mail_ikon"
         android:ems="10"
-        android:hint="E-Mail Giriniz"
+        android:hint="Mailinizi Giriniz"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/txt_şifre_login"
+        app:layout_constraintBottom_toTopOf="@+id/txt_sifre_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txt_şifre_login"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="50dp"
+        android:id="@+id/txt_sifre_login"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="33dp"
+        android:drawableStart="@drawable/sifre_ikon"
         android:ems="10"
-        android:hint="Şifre Giriniz"
+        android:hint="Şifrenizi Giriniz"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/txt_şifremiunuttum_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/txt_mail_login"
         app:layout_constraintTop_toBottomOf="@+id/txt_mail_login" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_girisyap_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="168dp"
-        android:text="LogIn"
+        android:layout_marginBottom="190dp"
+        android:text="Giriş Yap"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_şifremiunuttum_login"
-        app:layout_constraintTop_toBottomOf="@+id/txt_şifremiunuttum_login" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/txt_kayıt_login"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="29dp"
         android:text="Kayıt Olmak İstiyorum"
         android:textColor="#00BCD4"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txt_şifremiunuttum_login"
-        app:layout_constraintEnd_toStartOf="@+id/txt_şifremiunuttum_login"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/txt_sifre_login"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sifre_login" />
 
     <TextView
-        android:id="@+id/txt_şifremiunuttum_login"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="33dp"
         android:text="Şifremi Unuttum"
         android:textColor="#00BCD4"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_kayıt_login"
-        app:layout_constraintTop_toBottomOf="@+id/txt_şifre_login" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_girisyap_login"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
