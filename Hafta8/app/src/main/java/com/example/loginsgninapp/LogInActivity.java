@@ -66,11 +66,16 @@ public class LogInActivity extends AppCompatActivity {
                                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
+
                                     if(task.isSuccessful()){
                                         if(fba.getCurrentUser().isEmailVerified())
                                             Toast.makeText(LogInActivity.this, "Başarıyla Giriş Yapıldı", Toast.LENGTH_SHORT).show();
                                         else
                                             Toast.makeText(LogInActivity.this, "E-Mail onayı tamamlanmamıştır...", Toast.LENGTH_SHORT).show();
+                                            fba.getCurrentUser().delete();
+                                            fba.signOut();
+                                            Intent signInIntent=new Intent(LogInActivity.this, SignInActivity.class);
+                                            startActivity(signInIntent);
                                     }else{
                                         Toast.makeText(LogInActivity.this, "Hatalı Giriş", Toast.LENGTH_SHORT).show();
                                     }
